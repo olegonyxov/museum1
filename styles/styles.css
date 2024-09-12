@@ -1,0 +1,81 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    width: 100%;
+    height: 200px; /* Установите нужную высоту */
+    background-image: url('../img/cut6.png');
+    background-size: cover; /* Покрывает весь элемент изображением */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторяет изображение */
+    
+}
+.title{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    text-shadow: 
+    1px 1px 0 black,  
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
+
+
+}
+.title-nav{
+    margin-top: 90px;
+    text-align: left;
+}
+.nav-text {
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    color: white;
+  text-shadow: 
+    1px 1px 0 black,  
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
+}
+.main {
+    width: 100%;
+    height: 1080px; /* Установите нужную высоту */
+    position: relative; /* Обеспечивает позиционирование для псевдоэлемента */
+    overflow: hidden; /* Убирает выходящие за границы элементы */
+
+    
+}
+.main::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Прозрачность только для фона */
+    z-index: -1; /* Помещает псевдоэлемент позади содержимого */
+}
+.main-text{
+    padding-top: 50px;
+    width: 50%;
+    font-size: 22px;
+    padding-left: 10px;
+    
+}
+footer {
+    display: flex;
+    justify-content: center; /* Центрирует горизонтально */
+    align-items: flex-end;   /* Выровнять по нижнему краю */
+    height: 50px;           /* Высота футера, можно настроить по необходимости */
+    width: 100%;
+    background-color: rgb(73, 14, 121);
+}
+.footer-text{
+    
+}
